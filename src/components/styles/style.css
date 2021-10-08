@@ -1,3 +1,171 @@
+:root {
+    --green: #1db954;
+    --black: #191414;
+    --font: sans-serif !important;
+  }
+
+  
+body {
+    font-family: var(--font);
+    color: white;
+    background-color: var(--black) !important;
+  }
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 280px;
+    background-color: black;
+    height: 100%;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  .main-menu ul li a {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .main-menu ul li a i {
+    margin-right: 1rem;
+  }
+  
+  .playlist-menu {
+    width: 220px;
+    height: 50%;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 16px;
+    overflow-y: scroll;
+  }
+  .main {
+    margin-left: 280px;
+  }
+  
+  .logo {
+    width: 240px;
+  }
+  hr {
+    background-color: grey;
+    width: 90%;
+  }
+  .recommended-album {
+    background-color: grey;
+    border-radius: 10px;
+    height: 116px;
+    opacity: 0.5;
+  }
+  .recommended-album img {
+    opacity: 1;
+  }
+  /* @media screen and (max-width: 767px) {
+    .sidebar {
+      display: none;
+    }
+    .mainPage {
+      margin-left: 0;
+    }
+  } */
+  
+  .mainPage {
+    margin-left: 280px;
+  }
+  
+  /* .card:hover{
+        
+    } */
+  
+  .play-btn {
+    background: var(--green);
+  }
+  
+  .play-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    transform: translateX(-60px);
+    opacity: 0;
+    top: 25%;
+    left: 90%;
+  }
+  
+  .card:hover .play-btn {
+    opacity: 1;
+  }
+  .play-btn::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 2px;
+    margin: auto;
+    border-style: solid;
+    border-width: 7px 0 7px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  .play-btn-2 {
+    background: var(--green);
+  }
+  
+  .play-btn-2 {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    transform: translateX(-60px);
+    opacity: 0;
+    top: 30%;
+    left: 60%;
+  }
+  
+  .card:hover .play-btn-2 {
+    opacity: 1;
+  }
+  .play-btn-2::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 2px;
+    margin: auto;
+    border-style: solid;
+    border-width: 7px 0 7px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  .op:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .cb {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .cb:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .firstlogo {
+    width: 150px;
+  }
+  
+  .cardWidth{
+    min-width: 150px !important; 
+    max-width: 200px !important;
+  }
+
 .routine{
     border-style: solid;
     border-width: 3px;
@@ -26,3 +194,501 @@
     text-align: center;
 }
 
+.input12{
+    
+}
+
+body {
+    background: rgb(63, 7, 6);
+    background: linear-gradient(180deg, rgba(63, 7, 6, 1) 0%, rgba(18, 18, 18, 1) 25%);
+  }
+
+  .op {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+
+
+  .cardtext {
+    color: white;
+    font-size: smaller;
+  }
+
+  .btn-secondary {
+    background-color: black;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px;
+    border: none;
+    border-radius: 20%/80%;
+    ;
+  }
+
+  .card-body {
+    padding: 0, 5rem;
+    align-items: center;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+
+  h5.card-title {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: -1rem;
+    font-size: 1.1rem;
+  }
+
+
+  .jumbotron {
+    height: 350px; /* for now - change this as neccesary*/
+  }
+  
+  .bg-gradient {
+    background: rgb(203,24,191);
+    background: linear-gradient(180deg, rgba(203,24,191,1) 0%, rgba(132,16,125,0.6909138655462185) 72%, rgba(0,0,0,0.2455357142857143) 100%);  
+  }
+  
+  .album-jumbotron-description {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .jumbotron .album-jumbotron-description h3 {
+    font-weight: 700 !important;
+    font-size: 30px !important;
+  }
+  
+  .album-jumbotron-description > p{
+    font-size: 11px; 
+    font-weight: 600;
+  }
+  
+  .album-jumbotron-description h3{
+    font-weight: 700;
+    font-size: 30px;
+    height: 32px;
+  }
+  
+  .artist-descr-area {
+    height: 20px !important;
+    display:flex;
+    align-items: center;
+  }
+  
+  .artist-descr-area > p{
+    margin-bottom: 0;
+    font-size: 14px;
+    color: rgb(211, 211, 211);
+  }
+  
+  .artist-descr-area a {
+    color: white;
+    margin-bottom: 0;
+    font-size: 14px;
+    height: 22px;
+  }
+  
+  .artist-descr-area a :hover {
+    color: lightgray(182, 182, 182);
+    text-decoration: underline;
+  }
+  
+  
+  .artist-icon-sm {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: teal;
+  }
+  #title-for-circles {
+    display: flex;
+    align-items: center;
+  }
+  
+  #title-for-circles::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color:  darkgray;
+    margin: 0 5px;
+  }
+  
+  #title-for-circles::after {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: darkgray;
+    margin: 0 5px;
+  }
+
+  /* SONG NAVBAR */
+/* LEFT */
+.song-navbar {
+    width: 100%;
+    height: 10vh;
+    background-color: #191919; /* TO BE CHANGED*/
+    position: fixed;
+    bottom: 0;
+    padding: 15px 15px;
+    margin: 0;
+    z-index: 2;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .left-song-nav {
+    display: flex;
+  
+    color: white;
+    align-content: center;
+  }
+  
+  .text-and-icons {
+    margin: 10px 0 0 10px;
+  
+    display: flex;
+  }
+  
+  .text-description a:link {
+    color: white;
+  }
+  
+  .text-description a:visited {
+    color: white;
+  }
+  
+  .left-song-nav .text-description h5 {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  
+  .left-song-nav .text-description p {
+    font-size: 10px;
+    color: darkgray;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .song-nav-img-resize {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .song-nav-icons {
+    margin-left: 10px;
+  }
+  
+  .song-nav-icons-resize {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .song-nav-icons-resize:hover {
+    filter: invert(0.28) brightness(1.13);
+  }
+  
+  .song-nav-icons-resize:active {
+    filter: invert(0.4) brightness(1);
+  }
+  
+  /* MIDDLE */
+  .middle-song-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .middle-song-nav .top-part-song-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    width: 200px;
+    margin-bottom: 5px;
+  }
+  
+  .top-part-song-nav img {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .top-part-song-nav img:hover {
+    filter: invert(0.28) brightness(1.13);
+  }
+  
+  .top-part-song-nav img:active {
+    filter: invert(0.4) brightness(1);
+  }
+  
+  #middle-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .btm-part-song-nav {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .middle-song-nav .btm-part-song-nav p {
+    margin: 0 8px 0 8px;
+    font-size: 10px;
+  }
+  
+  .btm-part-song-nav .song-bar-line {
+    height: 3px;
+    min-width: 400px;
+    border-radius: 1.5px;
+    background-color: gray;
+  }
+  
+  /* RIGHT */
+  .icons-combo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-song-nav .icons-combo img {
+    width: 16px;
+    height: 16px;
+    margin-right: 14px;
+  }
+  
+  .right-song-nav .icons-combo img:hover {
+    filter: invert(0.28) brightness(1.13);
+  }
+  
+  .right-song-nav .icons-combo img:active {
+    filter: invert(0.4) brightness(1);
+  }
+  
+  #first-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 14px;
+  }
+  
+  .volume-line {
+    height: 4px;
+    width: 80px;
+    border-radius: 2px;
+    background-color: white;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+
+
+  .cardContent{
+
+    min-width: 230px; 
+    max-width: 280px; 
+    max-height: 80px;
+
+  }
+
+  .cardLink{
+text-decoration: none; color: white;
+
+  }
+
+  .cardIMG{
+      
+    max-width: 80px;
+  }
+
+  body {
+    background-color: #121212;
+}
+#playButton {
+    background-color: #1CBB52;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 20px 0 0 20px;
+}
+
+#playIcon {
+    width: 30px;
+    height: 30px;
+}
+
+#playIcon1 {
+    width: 30px;
+    height: 30px;
+    fill: red;
+}
+
+#playButton:hover {
+    background-color: green;
+}
+
+#heartIcon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 20px 0 0 40px;
+    fill: #BAB7BE;
+}
+
+#heartIcon:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#ellipsisIcon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 20px 0 0 40px;
+    fill: #BAB7BE;
+}
+
+#ellipsisIcon:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+.table {
+    color: #BAB7BE;
+    margin: 20px 40px 0 20px;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+td p {
+    font-size: 12px;
+    margin: 0;
+}
+
+td h6 {
+    color: #F4F4F4;
+    margin: 0;
+}
+
+hr .borderless {
+    background-color: red !important;
+}
+
+
+
+
+tr:hover {
+    background-color: darkslategray;
+}
+
+#headingTrack:hover {
+    cursor: auto;
+    background-color: #121212;
+    
+}
+
+#playing {
+    color: #1CBB52;
+    margin: 10px 30px 30px 30px;
+    cursor: pointer;
+}
+
+
+#playTrack, #playTrack2, #playTrack3, #playTrack4, #playTrack5, #playTrack6, #playTrack7, #playTrack8, #playTrack9 {
+    background-color: #1CBB52;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+#trackIcon {
+    padding-bottom: 5px;
+}
+
+#pauseTrack, #pauseTrack2, #pauseTrack3, #pauseTrack4, #pauseTrack5, #pauseTrack6, #pauseTrack7, #pauseTrack8, #pauseTrack9 {
+    background-color: #1CBB52;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+#stopTrack {
+    background-color: #1CBB52;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+
+#refresh:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart1, #heart2, #heart3, #heart4, #heart5, #heart6, #heart7, #heart8, #heart9 {
+    width: 25px;
+    height: 25px;
+}
+
+#heart1:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart2:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart3:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart4:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart5:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart6:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart7:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart8:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart9:hover {
+    cursor: pointer;
+    fill: white;
+}
